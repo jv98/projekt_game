@@ -8,7 +8,7 @@ x = speak (talk);
 
 function speak(talk) {
         
-    while (talk = 'no' || ''); {
+    do {
         
   
     if (talk === 'no'){
@@ -21,10 +21,12 @@ function speak(talk) {
     else{
         alert('hint say yes')
     }   
-} 
+} while ('yes');
 }
 
-
+if (condition) {
+    
+}
 const house1 = prompt("do what go in to house");
 y= partrom(house1);
   function partrom(house1) {
