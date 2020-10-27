@@ -4,6 +4,7 @@ alert('you see man in corner of the one of huse it look like it was runw donw')
 
 const talk = prompt("do what talk too the man");
 x = speak (talk);
+//ska gör en do while som ska gör en koden tills person skriver yes
 do {
 function speak(talk) {
         
