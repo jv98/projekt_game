@@ -1,3 +1,2 @@
-# thi my game 
-
-trying to get code workign
+# det här är för spelet
+håller på med att fösrta saken att om igen
