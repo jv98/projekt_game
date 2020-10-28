@@ -2,13 +2,14 @@
 let lever = false;
 let fusitoncore = false;
 let nuclerpower = false;
-x = speak();
 
 
 //ska gör en do while som ska gör en koden tills person skriver yes
 
 alert('hello traveler big disater has happen and you need solve this big problem')
 alert('you see man in corner of the one of huse it look like it was runw donw')
+speak();
+
 function speak() {
     let talk
     do {
@@ -38,20 +39,29 @@ do {
     const walk1 = prompt("do what go to house");
  if ( walk1 === 'yes') {
     
-    partrom();
+    if (lever) {
+        alert ('fell like i got item from here')
+    } 
+    else {
+        partrom();
+    } 
 }
-const walk2 = prompt("text holder");
+const walk2 = prompt("house2");
  if (walk2 === 'yes') {
     place2();
 }
- const walk3 = prompt("text holder");
+ const walk3 = prompt("house3");
  if (walk3 === 'yes') {
     place3();
 }
+const walk4 = prompt("end game")    
+if ( !lever || !fusitoncore || !nuclerpower ) {
+        alert('you dont have the itemns')
+    }
+ if (lever&& fusitoncore && nuclerpower && walk4 === 'yes') {
 
- if (a, b ,c && walk4 === 'yes') {
-    const walk4 = prompt("text holder")
     endroom();
+    break
 }
 } while( walk1 !== 'yes'|| walk2 !== 'yes' || walk3 !== 'yes');
 
@@ -60,24 +70,30 @@ const walk2 = prompt("text holder");
 function partrom() {
         alert("you ennter");
          alert('you walk in too huse next to man you can see onley see darknes')
-      if (walk1 === 'yes') {
-      //palace wer walk in too
+         let talk1 = prompt("test holder")
+      if (talk1 === 'yes') {
+        alert('t')
       } 
-      else if (walk1) {
-          // you look arouound the rom
+       talk1 = prompt("test holder")
+       if ( talk1=== 'yes') {
+        alert('t')
       }
-      else if (walk1) {
-          //
+      talk1 = prompt("test holder")
+       if (talk1 === 'yes') {
+        alert('t')
     }
-    else if (walk1){
-          //
+    talk1 = prompt("test holder")
+     if (talk1=== 'yes'){
+          alert('t')
     }
-    const partrom = prompt("do what take upp the item")
-    if (walk1 === 'take') {
-        item1 = "lever";
+    talk1 = prompt("do what take upp the item")
+    if (talk1 === 'take') {
+        lever = true;
+        fusitoncore = true;
+        nuclerpower = true;
         
     }  
-        else (walk1 === 'no') 
+        else (talk1 === 'no') 
             alert ('you wake back to text holder')
         
 } 
@@ -97,5 +113,6 @@ function place3() {
 }
 
 function endroom() {
+    alert ('game is done')
     
 }
