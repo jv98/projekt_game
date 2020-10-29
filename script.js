@@ -104,19 +104,20 @@ function partrom() {
         
 } 
 function place2() {
-    let talk2 = prompt("text holder")
+    alert('you enter bassment oof the huse next to the man')
+    let talk2 = prompt("you see a strange hole in wall of the room do what put your hand in to it? yes/no ")
    if (talk2 === 'yes' ) {
-    alert('t')
-    talk2 = prompt("text holder")
+    alert('it feels like something in the hole feels hairy and you remove your hand quikly from the hole')
+    talk2 = prompt("do want turn on lapp yes/no")
    } else if(talk2 === 'yes'){
-       alert('t')
+       alert('you try turn on lapp nothing happens')
    }
    talk2 = prompt("you strange item on the ground do what take it?")
     if(talk2 === 'take'){
         fusitoncore = true;
-        //take item här
+     
    }else (talk2 === 'no')
-            alert('you go back to the strange man')
+        alert ('you go back to the strange man next too the house')
 }
 
 function place3() {
@@ -132,10 +133,12 @@ function place3() {
         nuclerpower = true;
          //take item här
     }else (talk3 === 'no')
-             alert('you go back to the strange man')
+        alert ('you go back to the strange man next too the house')
 }
 
 function endroom() {
+    alert ('the strange puts the item on time machine and sayes you ready to travle back in time')
     alert ('you turn on machin and you go back to 2020 and you killa buterfly and ')
     
+    alert('thank you for try my game')
 }
