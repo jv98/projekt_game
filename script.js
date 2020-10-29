@@ -6,7 +6,7 @@ let nuclerpower = false;
 
 //ska gör en do while som ska gör en koden tills person skriver yes
 
-alert('hello traveler big disaster has happened and you need solve this big problem')
+alert('you were thrown into the future you do not know where you loaded somewhere but all you can see are broken houses')
 alert('you see a strange man lying next to house')
 speak();
 
@@ -43,7 +43,7 @@ do {
         partrom();
     } 
 }
-const walk2 = prompt("house2");
+const walk2 = prompt(" do you want to enter the basement? yes/no");
  if (walk2 === 'yes') {
     if (fusitoncore) {
         alert ('when you took the item the house collapsed and you cant go back there')
@@ -53,7 +53,7 @@ const walk2 = prompt("house2");
     } 
   
 }
- const walk3 = prompt("house3");
+ const walk3 = prompt("do want enter school? yes/no");
  if (walk3 === 'yes') {
     if (nuclerpower) {
         alert ('when you took the item the house collapsed and you cant go back there')
@@ -94,6 +94,7 @@ function partrom() {
     }
     talk1 = prompt("do what take upp the item? take/no")
     if (talk1 === 'take') {
+        alert('you take the item on floor')
         lever = true;
         
         
@@ -104,7 +105,7 @@ function partrom() {
         
 } 
 function place2() {
-    alert('you enter bassment oof the huse next to the man')
+    alert('you enter basement of the house next to the man')
     let talk2 = prompt("you see a strange hole in wall of the room do what put your hand in to it? yes/no ")
    if (talk2 === 'yes' ) {
     alert('it feels like something in the hole feels hairy and you remove your hand quikly from the hole')
@@ -114,6 +115,7 @@ function place2() {
    }
    talk2 = prompt("you strange item on the ground do what take it?")
     if(talk2 === 'take'){
+        alert('you take the item from the ground')
         fusitoncore = true;
      
    }else (talk2 === 'no')
@@ -121,17 +123,19 @@ function place2() {
 }
 
 function place3() {
-    let talk3 = prompt("text holder")
+    alert('you can see different rooms look like place where you study')
+    let talk3 = prompt("do want enter one of the rooms? yes/no")
     if (talk3 === 'yes' ) {
-     alert('t')
+     alert('you see a skeltons in class room with what loks liek mac book pro')
      talk3 = prompt("text holder")
     } else if(talk3 === 'yes'){
         alert('t')
     }
     talk3 = prompt("you strange item on the ground do what take it?")
      if(talk3 === 'take'){
+        alert('you take the item oof ground')
         nuclerpower = true;
-         //take item här
+       
     }else (talk3 === 'no')
         alert ('you go back to the strange man next too the house')
 }
