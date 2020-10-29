@@ -6,19 +6,19 @@ let nuclerpower = false;
 
 //ska gör en do while som ska gör en koden tills person skriver yes
 
-alert('you were thrown into the future you do not know where you loaded somewhere but all you can see are broken houses')
-alert('you see a strange man lying next to house')
+alert('you were thrown into the future and you do not know where you landed in the future and all you can se is broken houses')
+alert('you see a strange man lying next to a house')
 speak();
 
 function speak() {
     let talk
     do {
 // spara vädert i en varibale och och gör en elese if stamtet och skriv att spelet är sluts
-        talk = prompt("do you want talk to the man yes/no");
+        talk = prompt("do you want to talk to the man yes/no");
         talk = talk.toLowerCase();
         if (talk === 'yes') {
-            alert('hello there this world has gone under from last war that happened here from all of the nuclear attacks')
-            alert('To save the world, you need to find the part for the time machine and give them also when you have found all the parts')
+            alert('hello there this world has gone under from the last war that happened here from all of the nuclear attacks')
+            alert('To save the world, you need to find the parts of the time machine and give them to me')
         }
         else if (talk === 'no') {
             alert('should talk to the man')
@@ -33,7 +33,7 @@ let walk4
 
 do {
     
-    const walk1 = prompt("do what go to house yes/no");
+    const walk1 = prompt("do what go to the house yes/no");
  if ( walk1 === 'yes') {
     
     if (lever) {
@@ -64,9 +64,9 @@ const walk2 = prompt(" do you want to enter the basement? yes/no");
     
 }
 
-const walk4 = prompt("do have all items for time machine")    
+const walk4 = prompt("do have all items for the time machine")    
 if ( !lever || !fusitoncore || !nuclerpower ) {
-        alert(' the strange man saye that, you dont have the itemns')
+        alert(' the strange man says that, you dont have the items')
     }
  if (lever&& fusitoncore && nuclerpower && walk4 === 'yes') {
 
@@ -78,42 +78,37 @@ if ( !lever || !fusitoncore || !nuclerpower ) {
 
 
 function partrom() {
-        alert("you ennter house next to strange man and onley thing you can see is faint ligt in rooms");
-         let talk1 = prompt("you see box on table do want to put hand in too it, type yes/no")
+        alert("you enter the house next to the strange man and the only thing you can see is faint ligt in the room");
+         let talk1 = prompt("you see a box on table do you want to put your hand into it, yes/no")
       if (talk1 === 'yes') {
-        alert('you get biten by a posised spider and fell much worst')
+        alert('you get biten by a posised spider and feel much wors')
       
       }  
-       talk1 = prompt("you can see there a chest on floor do whant too open it ? yes/no ")
+       talk1 = prompt("you can see there is a chest on floor do whant to open it ? yes/no ")
        if ( talk1=== 'yes') {
-        alert('you find gold in chest and you take it')
+        alert('you find gold in the chest and you take it')
       }
-    talk1 = prompt("test holder")
-     if (talk1=== 'yes'){
-          alert('t')
-    }
-    talk1 = prompt("do what take upp the item? take/no")
+
+    talk1 = prompt("do you want pick upp the item? take/no")
     if (talk1 === 'take') {
         alert('you take the item on floor')
         lever = true;
         
-        
-        
     }  
         else (talk1 === 'no') 
-            alert ('you go back to the strange man next too the house')
+            alert ('you go back to the strange man next to the house')
         
 } 
 function place2() {
-    alert('you enter basement of the house next to the man')
-    let talk2 = prompt("you see a strange hole in wall of the room do what put your hand in to it? yes/no ")
+    alert('you enter the basement of the house next to the man')
+    let talk2 = prompt("you see a strange hole in the wall in the room do what put your hand into it? yes/no ")
    if (talk2 === 'yes' ) {
-    alert('it feels like something in the hole feels hairy and you remove your hand quikly from the hole')
-    talk2 = prompt("do want turn on lapp yes/no")
+    alert('something in the hole feels hairy and you remove your hand quikly from the hole')
+    talk2 = prompt("do want turn on the lamp yes/no")
    } else if(talk2 === 'yes'){
-       alert('you try turn on lapp nothing happens')
+       alert('you try turn on the lamp nothing happens')
    }
-   talk2 = prompt("you strange item on the ground do what take it?")
+   talk2 = prompt("you see a strange item on the ground do want to take it? take/no")
     if(talk2 === 'take'){
         alert('you take the item from the ground')
         fusitoncore = true;
@@ -123,17 +118,19 @@ function place2() {
 }
 
 function place3() {
-    alert('you can see different rooms look like place where you study')
+    alert('you can see different rooms thats looks like place where you study')
     let talk3 = prompt("do want enter one of the rooms? yes/no")
     if (talk3 === 'yes' ) {
-     alert('you see a skeltons in class room with what loks liek mac book pro')
-     talk3 = prompt("text holder")
+     alert('you see a skeltons in the classroom that looks like Macbook pro')
+
+     talk3 = prompt("do you want to search the kitchen? yes/no ")
     } else if(talk3 === 'yes'){
-        alert('t')
+        alert('you find a old glass in sink')
     }
-    talk3 = prompt("you strange item on the ground do what take it?")
+
+    talk3 = prompt("you see a strange item on the ground do you want to take it? take/no")
      if(talk3 === 'take'){
-        alert('you take the item oof ground')
+        alert('you take the item of ground')
         nuclerpower = true;
        
     }else (talk3 === 'no')
@@ -141,8 +138,7 @@ function place3() {
 }
 
 function endroom() {
-    alert ('the strange puts the item on time machine and sayes you ready to travle back in time')
-    alert ('you turn on machin and you go back to 2020 and you killa buterfly and ')
-    
-    alert('thank you for try my game')
+    alert ('the strange man puts the item on the time machine and says are you ready to travle back in time')
+    alert ('you turn on the machin and you go back to 2020 and you kill a buterfly and the future has changed now')    
+    alert('thank you for trying my game')
 }
